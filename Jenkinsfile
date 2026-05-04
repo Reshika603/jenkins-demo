@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
+
         stage('Checkout') {
             steps {
-                git 'https://github.com/<Reshika603>/jenkins-demo.git'
+                git 'https://github.com/Reshika603/jenkins-demo.git'
             }
         }
 
