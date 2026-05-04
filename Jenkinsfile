@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Reshika603/jenkins-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean package'
